@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/washingtonbr/spotify-clone/issues"
   },
-  "homepage": "https://github.com/washingtonbr/spotify-clone#readme"
+  "homepage": "https://github.com/washingtonbr/spotify-clone#readme",
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.8.4",
+    "@babel/preset-env": "7.8.4",
+    "@babel/preset-react": "7.8.3"
+  }
 }
