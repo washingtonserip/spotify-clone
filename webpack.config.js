@@ -2,14 +2,21 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader', 'eslint-loader'],
-        options: { presets: ['@babel/env'] },
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: ['@babel/env'],
+            },
+          },
+          'eslint-loader',
+        ],
       },
       {
         test: /\.css$/,
