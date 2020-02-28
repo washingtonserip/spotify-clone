@@ -2,6 +2,7 @@ import React from 'react';
 import { hot } from 'react-hot-loader/root';
 import { ThemeProvider } from 'styled-components';
 import 'normalize.css';
+import Layout from '../layout';
 
 const theme = {
   primaryColor: 'rgb(153, 153, 153)',
@@ -13,7 +14,9 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      App component
+      <Layout>
+        App component
+      </Layout>
     </ThemeProvider>
   );
 }
