@@ -14,7 +14,6 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.div`
-  widh: 100vw;
   padding: 32px;
   text-align: center;
 

@@ -6,7 +6,7 @@ import {
   Header,
   Logo,
   Content,
-} from './layout-style';
+} from './layout-styles';
 
 function LayoutView({ children }) {
   return (
