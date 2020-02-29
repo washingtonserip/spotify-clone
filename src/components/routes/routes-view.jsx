@@ -5,11 +5,16 @@ import {
   Route,
 } from 'react-router-dom';
 import Home from '../../pages/home';
+import Login from '../../pages/login';
 
 function RoutesView() {
   return (
     <Router>
       <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
+
         <Route path="/">
           <Home />
         </Route>
