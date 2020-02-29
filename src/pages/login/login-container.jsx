@@ -13,22 +13,13 @@ function LoginContainer() {
     return `${baseUrl}${clientId}${redirectUri}${scope}${responseType}`;
   };
 
-  const openLoginPopup = () => {
-    const { screen, open } = window;
-    const url = getSpotifyUrl();
-    const target = 'Spotify';
-    const width = 450;
-    const height = 730;
-    const left = (screen.width / 2) - (width / 2);
-    const top = (screen.height / 2) - (height / 2);
-    const features = `menubar=no,location=no,resizable=no,scrollbars=no,status=no,width=${width},height=${height},top=${top},left=${left}`;
-
-    open(url, target, features);
+  const redirectToSpotify = () => {
+    window.location.href = getSpotifyUrl();
   };
 
   return (
     <LoginView
-      openLoginPopup={openLoginPopup}
+      redirectToSpotify={redirectToSpotify}
     />
   );
 }

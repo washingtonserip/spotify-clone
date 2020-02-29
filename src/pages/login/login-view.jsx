@@ -9,7 +9,7 @@ import {
   Button,
 } from './login-styles';
 
-function LoginView({ openLoginPopup }) {
+function LoginView({ redirectToSpotify }) {
   return (
     <Wrapper>
       <Box>
@@ -17,7 +17,7 @@ function LoginView({ openLoginPopup }) {
 
         <Text>Pesquise, favorite e ouça!</Text>
 
-        <Button onClick={openLoginPopup}>
+        <Button onClick={redirectToSpotify}>
           Conecte-se via Spotify
         </Button>
       </Box>
@@ -26,7 +26,7 @@ function LoginView({ openLoginPopup }) {
 }
 
 LoginView.propTypes = {
-  openLoginPopup: PropTypes.func.isRequired,
+  redirectToSpotify: PropTypes.func.isRequired,
 };
 
 export default LoginView;
