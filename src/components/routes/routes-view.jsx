@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from '../../pages/home';
 import Login from '../../pages/login';
+import PrivateRoute from '../private-route';
 import CallbackAuth from '../../pages/callback-auth';
 
 function RoutesView() {
@@ -20,9 +21,9 @@ function RoutesView() {
           <CallbackAuth />
         </Route>
 
-        <Route path="/">
+        <PrivateRoute path="/">
           <Home />
-        </Route>
+        </PrivateRoute>
       </Switch>
     </Router>
   );
