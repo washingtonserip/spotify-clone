@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Home from '../../pages/home';
 import Login from '../../pages/login';
+import CallbackAuth from '../../pages/callback-auth';
 
 function RoutesView() {
   return (
@@ -13,6 +14,10 @@ function RoutesView() {
       <Switch>
         <Route path="/login">
           <Login />
+        </Route>
+
+        <Route path="/callback-auth">
+          <CallbackAuth />
         </Route>
 
         <Route path="/">
