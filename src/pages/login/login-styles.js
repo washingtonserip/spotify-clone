@@ -39,7 +39,7 @@ export const Text = styled.h1`
   }
 `;
 
-export const Link = styled.a`
+export const Button = styled.button`
   display: block;
   width: 220px;
   height: 40px;
@@ -53,6 +53,7 @@ export const Link = styled.a`
   background-color: ${(props) => props.theme.greenColor};
   border-radius: 50px;
   cursor: pointer;
+  border: 0;
 
   @media(min-width: 768px) {
     width: 260px;

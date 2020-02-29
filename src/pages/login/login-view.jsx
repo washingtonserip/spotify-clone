@@ -1,14 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import LogoSvg from '../../images/logo.svg';
 import {
   Wrapper,
   Box,
   Logo,
   Text,
-  Link,
+  Button,
 } from './login-styles';
 
-function LoginView() {
+function LoginView({ openLoginPopup }) {
   return (
     <Wrapper>
       <Box>
@@ -16,12 +17,16 @@ function LoginView() {
 
         <Text>Pesquise, favorite e ouça!</Text>
 
-        <Link href="/">
+        <Button onClick={openLoginPopup}>
           Conecte-se via Spotify
-        </Link>
+        </Button>
       </Box>
     </Wrapper>
   );
 }
+
+LoginView.propTypes = {
+  openLoginPopup: PropTypes.func.isRequired,
+};
 
 export default LoginView;
