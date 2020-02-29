@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   entry: './src/index.jsx',
@@ -47,5 +48,10 @@ module.exports = {
     hotOnly: true,
     historyApiFallback: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new Dotenv({
+      path: `./environments/.env.${process.env.NODE_ENV}`,
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };

@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# dotenv environment variables file
+.env
+environments/.env.development
+environments/.env.homolog
+environments/.env.production
