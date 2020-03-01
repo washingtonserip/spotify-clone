@@ -4,16 +4,26 @@ export const Wrapper = styled.article`
   width: 140px;
   text-align: center;
   cursor: pointer;
-  margin: 0 25px 25px;
+  margin: 0 12.5px 25px;
 
   @media(min-width: 768px) {
     width: 155px;
-    margin: 0 30px 35px;
+    margin: 0 15px 35px;
   }
 
   @media(min-width: 992px) {
     width: 170px;
-    margin: 0 70px 50px;
+    margin: 0 35px 50px;
+
+    &:last-child {
+      display: none;
+    }
+  }
+
+  @media(min-width: 1200px) {
+    &:last-child {
+      display: block;
+    }
   }
 `;
 

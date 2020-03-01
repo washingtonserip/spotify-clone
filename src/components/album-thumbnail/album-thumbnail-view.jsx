@@ -7,7 +7,7 @@ import {
 } from './album-thumbnail-styles';
 import AlbumCover from '../../images/album-cover.jpg';
 
-function AlbumThumbnail() {
+function AlbumThumbnailView() {
   return (
     <Wrapper>
       <Image
@@ -26,4 +26,4 @@ function AlbumThumbnail() {
   );
 }
 
-export default AlbumThumbnail;
+export default AlbumThumbnailView;

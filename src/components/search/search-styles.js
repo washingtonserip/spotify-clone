@@ -47,8 +47,8 @@ export const Input = styled.input`
   }
 
   @media(min-width: 992px) {
-    height: 38px;
-    font-size: 32px;
-    line-height: 38px;
+    height: 56px;
+    font-size: 48px;
+    line-height: 56px;
   }
 `;
