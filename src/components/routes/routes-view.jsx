@@ -9,6 +9,7 @@ import Login from '../../pages/login';
 import PrivateRoute from '../private-route';
 import CallbackAuth from '../../pages/callback-auth';
 import Search from '../../pages/search';
+import Album from '../../pages/album';
 
 function RoutesView() {
   return (
@@ -25,6 +26,10 @@ function RoutesView() {
         <Route path="/search">
           <Search />
         </Route>
+
+        <PrivateRoute path="/album">
+          <Album />
+        </PrivateRoute>
 
         <PrivateRoute path="/">
           <Home />
