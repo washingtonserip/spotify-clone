@@ -7,8 +7,13 @@ export const Wrapper = styled.div`
   padding: 0 8px;
   margin-bottom: 32px;
 
+  @media(min-width: 768px) {
+    margin-bottom: 62px;
+  }
+
   @media (min-width: 992px) {
     margin-top: 70px;
+    margin-bottom: 82px;
   }
 `;
 
