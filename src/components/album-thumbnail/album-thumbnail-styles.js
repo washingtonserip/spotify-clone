@@ -6,21 +6,23 @@ export const Wrapper = styled.article`
   cursor: pointer;
   margin: 0 12.5px 25px;
 
+  &:last-child {
+    display: none;
+  }
+
   @media(min-width: 768px) {
-    width: 155px;
-    margin: 0 15px 35px;
+    width: 145px;
+    margin: 0 20px 35px;
   }
 
   @media(min-width: 992px) {
-    width: 170px;
+    width: calc(25% - 70px);
     margin: 0 35px 50px;
-
-    &:last-child {
-      display: none;
-    }
   }
 
   @media(min-width: 1200px) {
+    width: calc(20% - 70px);
+
     &:last-child {
       display: block;
     }
