@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import Search from '../../components/search';
 import Headings from '../../components/headings';
-import SearchResults from '../../components/search-results';
+import SearchResults from './components/search-results';
 
 function SearchView() {
   return (
