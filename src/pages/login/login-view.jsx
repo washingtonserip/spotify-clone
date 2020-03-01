@@ -13,7 +13,10 @@ function LoginView({ redirectToSpotify }) {
   return (
     <Wrapper>
       <Box>
-        <Logo src={LogoSvg} />
+        <Logo
+          src={LogoSvg}
+          alt="Spotify"
+        />
 
         <Text>Pesquise, favorite e ouça!</Text>
 

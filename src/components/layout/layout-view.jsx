@@ -12,7 +12,10 @@ function LayoutView({ children }) {
   return (
     <Wrapper>
       <Header>
-        <Logo src={LogoSvg} />
+        <Logo
+          src={LogoSvg}
+          alt="Spotify"
+        />
       </Header>
 
       <Content>
