@@ -1,9 +1,9 @@
 import React from 'react';
-import SearchComponent from './search-component';
+import SearchView from './search-view';
 
 function SearchContainer() {
   return (
-    <SearchComponent />
+    <SearchView />
   );
 }
 
