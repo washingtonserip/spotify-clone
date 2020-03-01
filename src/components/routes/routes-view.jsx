@@ -8,6 +8,7 @@ import Home from '../../pages/home';
 import Login from '../../pages/login';
 import PrivateRoute from '../private-route';
 import CallbackAuth from '../../pages/callback-auth';
+import Search from '../../pages/search';
 
 function RoutesView() {
   return (
@@ -19,6 +20,10 @@ function RoutesView() {
 
         <Route path="/callback-auth">
           <CallbackAuth />
+        </Route>
+
+        <Route path="/search">
+          <Search />
         </Route>
 
         <PrivateRoute path="/">
