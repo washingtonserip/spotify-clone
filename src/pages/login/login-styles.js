@@ -28,7 +28,7 @@ export const Logo = styled.img`
 `;
 
 export const Text = styled.h1`
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   color: ${(props) => props.theme.primaryColor};
   margin: 55px 0;
@@ -43,7 +43,7 @@ export const Button = styled.button`
   display: block;
   width: 220px;
   height: 40px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   color: ${(props) => props.theme.secondaryColor};
   line-height: 40px;
