@@ -1,7 +1,6 @@
 import React from 'react';
-import { hot } from 'react-hot-loader/root';
-import { ThemeProvider } from 'styled-components';
 import 'normalize.css';
+import { ThemeProvider } from 'styled-components';
 import Routes from '../routes';
 import { Wrapper } from './app-styles';
 
@@ -13,14 +12,14 @@ const theme = {
   bgColor: 'rgb(29, 29, 29)',
 };
 
-function App() {
+function AppView() {
   return (
-    <Wrapper>
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <Wrapper>
         <Routes />
-      </ThemeProvider>
-    </Wrapper>
+      </Wrapper>
+    </ThemeProvider>
   );
 }
 
-export default hot(App);
+export default AppView;
