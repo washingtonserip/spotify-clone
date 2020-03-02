@@ -1,13 +1,25 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import AlbumThumbnail from '../../../../components/album-thumbnail';
 import { Wrapper } from './search-results-styles';
 
-function SearchResultsView() {
+function SearchResultsView({ results }) {
   return (
     <Wrapper>
-      {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((key) => <AlbumThumbnail key={key} />)}
+      {results.map((album) => (
+        <AlbumThumbnail
+          key={album.id}
+          cover={album.images[0].url}
+          name={album.name}
+          artists={album.artists.map((artist) => artist.name)}
+        />
+      ))}
     </Wrapper>
   );
 }
+
+SearchResultsView.propTypes = {
+  results: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default SearchResultsView;
