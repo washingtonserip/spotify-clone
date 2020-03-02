@@ -46,7 +46,9 @@
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-hot-loader": "4.12.19",
+    "react-redux": "7.2.0",
     "react-router-dom": "5.1.2",
+    "redux": "4.0.5",
     "styled-components": "5.0.1"
   }
 }
