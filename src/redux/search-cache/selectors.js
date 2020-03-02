@@ -1,3 +1,6 @@
-export const getAllSearchCached = (state) => state.byQueries;
+export const getSearchCacheState = (state) => state.searchCache;
 
-export const getCachedAlbumsByQuery = (state, query) => state.byQueries[query];
+export const getAllSearchCached = (state) => getSearchCacheState(state).byQueries;
+
+export const getCachedAlbumsByQuery = (query) => (state) => getSearchCacheState(state)
+  .byQueries[query];
