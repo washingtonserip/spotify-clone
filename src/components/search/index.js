@@ -1,1 +1,1 @@
-export { default } from './search-view';
+export { default } from './search-container';
