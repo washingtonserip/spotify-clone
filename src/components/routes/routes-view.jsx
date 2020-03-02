@@ -23,9 +23,9 @@ function RoutesView() {
           <CallbackAuth />
         </Route>
 
-        <Route path="/search">
+        <PrivateRoute path={['/search/:query', '/search']}>
           <Search />
-        </Route>
+        </PrivateRoute>
 
         <PrivateRoute path="/album">
           <Album />
