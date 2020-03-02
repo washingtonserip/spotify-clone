@@ -10,6 +10,12 @@ export const Button = styled.button`
   padding: 0;
   cursor: pointer;
   margin-bottom: 30px;
+
+  @media(min-width: 992px) {
+    margin-top: 60px;
+    font-size: 18px;
+    margin-bottom: 42px;
+  }
 `;
 
 export const Icon = styled.i`
@@ -18,4 +24,9 @@ export const Icon = styled.i`
   height: 12px;
   margin-right: 5px;
   background: url(${backIcon}) no-repeat center left;
+
+  @media(min-width: 992px) {
+    width: 14px;
+    height: 14px;
+  }
 `;

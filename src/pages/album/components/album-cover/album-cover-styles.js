@@ -11,6 +11,12 @@ export const Image = styled.img`
   width: 250px;
   height: 250px;
   margin-bottom: 15px;
+
+  @media(min-width: 992px) {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const AlbumName = styled.h2`
@@ -21,6 +27,10 @@ export const AlbumName = styled.h2`
   margin: 0 0 10px;
   text-align: center;
   color: ${(props) => props.theme.secondaryColor};
+
+  @media(min-width: 992px) {
+    font-size: 18px;
+  }
 `;
 
 export const ArtistName = styled.h3`

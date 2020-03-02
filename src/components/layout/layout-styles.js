@@ -35,7 +35,8 @@ export const Logo = styled.img`
 `;
 
 export const Content = styled.div`
-  width: 310px;
+  width: 300px;
+  overflow: hidden;
 
   @media(min-width: 768px) {
   width: 710px;

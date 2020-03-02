@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.article`
-  width: 140px;
+  width: 137px;
   text-align: center;
   cursor: pointer;
   margin: 0 12.5px 25px;
