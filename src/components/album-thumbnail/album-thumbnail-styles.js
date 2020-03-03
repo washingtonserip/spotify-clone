@@ -10,6 +10,10 @@ export const Wrapper = styled.article`
     display: none;
   }
 
+  a {
+    text-decoration: none;
+  }
+
   @media(min-width: 768px) {
     width: 145px;
     margin: 0 20px 35px;

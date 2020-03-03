@@ -9,6 +9,7 @@ function SearchResultsView({ results }) {
       {results.map((album) => (
         <AlbumThumbnail
           key={album.id}
+          id={album.id}
           cover={album.images[0].url}
           name={album.name}
           artists={album.artists.map((artist) => artist.name)}
