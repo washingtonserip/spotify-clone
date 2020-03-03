@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { Wrapper, Label, Input } from './search-styles';
 
@@ -6,6 +6,14 @@ function SearchView({
   searchText,
   doSearch,
 }) {
+  const inputElement = useRef(null);
+
+  useEffect(() => {
+    if (inputElement.current) {
+      inputElement.current.focus();
+    }
+  }, []);
+
   return (
     <Wrapper>
       <Label htmlFor="search-field">
@@ -13,6 +21,7 @@ function SearchView({
       </Label>
 
       <Input
+        ref={inputElement}
         id="search-field"
         placeholder="Comece a escrever..."
         value={searchText}
