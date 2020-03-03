@@ -1,1 +1,1 @@
-export { default } from './album-view';
+export { default } from './album-container';

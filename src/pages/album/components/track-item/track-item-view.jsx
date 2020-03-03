@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { millisToMinutesAndSeconds } from '../../../../utils/time';
 import {
   Track,
   TrackNumber,
@@ -6,14 +8,24 @@ import {
   TrackDuration,
 } from './track-item-styles';
 
-function TrackItemView() {
+function TrackItemView({
+  index,
+  name,
+  duration,
+}) {
   return (
     <Track>
-      <TrackNumber>5.</TrackNumber>
-      <TrackName>Nome da faixa</TrackName>
-      <TrackDuration>3:32</TrackDuration>
+      <TrackNumber>{index + 1}</TrackNumber>
+      <TrackName>{name}</TrackName>
+      <TrackDuration>{millisToMinutesAndSeconds(duration)}</TrackDuration>
     </Track>
   );
 }
+
+TrackItemView.propTypes = {
+  index: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  duration: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+};
 
 export default TrackItemView;

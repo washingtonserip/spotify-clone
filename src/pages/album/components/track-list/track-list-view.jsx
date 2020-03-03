@@ -1,18 +1,34 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Wrapper,
   List,
 } from './track-list-styles';
 import TrackItem from '../track-item';
 
-function TrackListView() {
+function TrackListView({ tracks }) {
   return (
     <Wrapper>
       <List>
-        {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((key) => <TrackItem key={key} />)}
+        {tracks.map((track, index) => (
+          <TrackItem
+            key={track.id}
+            index={index}
+            name={track.name}
+            duration={track.duration_ms}
+          />
+        ))}
       </List>
     </Wrapper>
   );
 }
+
+TrackListView.propTypes = {
+  tracks: PropTypes.arrayOf(PropTypes.object),
+};
+
+TrackListView.getDefaultProps = {
+  tracks: [],
+};
 
 export default TrackListView;

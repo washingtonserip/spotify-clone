@@ -27,7 +27,7 @@ function RoutesView() {
           <Search />
         </PrivateRoute>
 
-        <PrivateRoute path="/album">
+        <PrivateRoute path="/album/:id">
           <Album />
         </PrivateRoute>
 

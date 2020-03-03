@@ -1,29 +1,43 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Wrapper,
   Image,
   AlbumName,
   ArtistName,
 } from './album-cover-styles';
-import AlbumCover from '../../../../images/album-cover.jpg';
 
-function AlbumCoverView() {
+function AlbumCoverView({
+  cover,
+  name,
+  artists,
+}) {
   return (
     <Wrapper>
       <Image
-        src={AlbumCover}
-        alt="Nome do álbum"
+        src={cover}
+        alt={name}
       />
 
       <AlbumName>
-        Nome do álbum
+        {name}
       </AlbumName>
 
       <ArtistName>
-        Nome do artista
+        {artists.join(', ')}
       </ArtistName>
     </Wrapper>
   );
 }
+
+AlbumCoverView.propTypes = {
+  cover: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  artists: PropTypes.arrayOf(PropTypes.string),
+};
+
+AlbumCoverView.getDefaultProps = {
+  artists: [],
+};
 
 export default AlbumCoverView;
