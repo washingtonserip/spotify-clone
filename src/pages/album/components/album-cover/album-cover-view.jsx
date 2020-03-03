@@ -14,10 +14,12 @@ function AlbumCoverView({
 }) {
   return (
     <Wrapper>
-      <Image
-        src={cover}
-        alt={name}
-      />
+      {cover && (
+        <Image
+          src={cover}
+          alt={name}
+        />
+      )}
 
       <AlbumName>
         {name}
