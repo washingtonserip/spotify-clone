@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 const commonPaths = require('./paths');
 
@@ -78,6 +79,13 @@ module.exports = {
         CLIENT_ID: JSON.stringify('129f014a85d7444e978a70025658bd1f'),
         REDIRECT_URI: JSON.stringify('http://localhost:3000/callback-auth'),
         API_URL: JSON.stringify('https://api.spotify.com'),
+      },
+    }),
+    new FileManagerPlugin({
+      onEnd: {
+        copy: [
+          { source: 'dist/index.html', destination: 'dist/404.html' },
+        ],
       },
     }),
   ],
