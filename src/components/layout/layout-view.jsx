@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import LogoSvg from '../../images/logo.svg';
 import {
   Wrapper,
@@ -12,10 +13,12 @@ function LayoutView({ children }) {
   return (
     <Wrapper>
       <Header>
-        <Logo
-          src={LogoSvg}
-          alt="Spotify"
-        />
+        <Link to="/">
+          <Logo
+            src={LogoSvg}
+            alt="Spotify"
+          />
+        </Link>
       </Header>
 
       <Content>
