@@ -1,7 +1,7 @@
 import { SAVE_CACHE_ALBUMS } from './action-types';
 
 const initialState = {
-  byQueries: [],
+  byQueries: {},
 };
 
 export default function (state = initialState, action) {
