@@ -1,7 +1,7 @@
 import apiHeaders from '../api-headers';
 
 function getAlbumV1(id) {
-  const endpoint = `https://api.spotify.com/v1/albums/${id}`;
+  const endpoint = `${process.env.API_URL}/v1/albums/${id}`;
 
   return fetch(
     endpoint,
