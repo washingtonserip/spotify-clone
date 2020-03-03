@@ -9,7 +9,8 @@ function SearchView({
   query,
   results,
 }) {
-  const title = results.lenght ? 'Resultados encontrados' : 'Nenhum resultado encontrado';
+  const title = results.length ? 'Resultados encontrados' : 'Nenhum resultado encontrado';
+
   return (
     <Layout>
       <Search
