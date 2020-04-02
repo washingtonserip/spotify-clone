@@ -44,6 +44,8 @@
     "clean-webpack-plugin": "3.0.0",
     "connect-history-api-fallback": "1.6.0",
     "dotenv-webpack": "1.7.0",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16.3": "1.7.2",
     "eslint": "6.8.0",
     "filemanager-webpack-plugin": "2.0.5",
     "html-webpack-plugin": "3.2.0",
@@ -63,5 +65,8 @@
     "terser-webpack-plugin": "2.3.5",
     "webpack": "4.41.6",
     "webpack-merge": "4.2.2"
+  },
+  "jest": {
+    "setupFilesAfterEnv": ["./src/setupTests.js"]
   }
 }
