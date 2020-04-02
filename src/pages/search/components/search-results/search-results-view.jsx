@@ -6,13 +6,18 @@ import { Wrapper } from './search-results-styles';
 function SearchResultsView({ results }) {
   return (
     <Wrapper>
-      {results.map((album) => (
+      {results.map(({
+        id,
+        images,
+        name,
+        artists,
+      }) => (
         <AlbumThumbnail
-          key={album.id}
-          id={album.id}
-          cover={album.images[0].url}
-          name={album.name}
-          artists={album.artists.map((artist) => artist.name)}
+          key={id}
+          id={id}
+          cover={images[0].url}
+          name={name}
+          artists={artists.map((artist) => artist.name)}
         />
       ))}
     </Wrapper>
