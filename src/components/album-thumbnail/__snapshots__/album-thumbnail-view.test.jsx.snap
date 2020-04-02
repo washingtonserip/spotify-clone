@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumThumbnailView renders correctly 1`] = `
+<article
+  className="sc-AxjAm duEsRS"
+>
+  <a
+    href="/album/XPTO"
+    onClick={[Function]}
+  >
+    <img
+      alt="XPTO"
+      className="sc-AxirZ cTKAUo"
+      src="XPTO"
+    />
+    <h2
+      className="sc-AxiKw dfKjlj"
+    >
+      XPTO
+    </h2>
+    <h3
+      className="sc-AxhCb dxgIcC"
+    >
+      XPTO
+    </h3>
+  </a>
+</article>
+`;
