@@ -5,23 +5,23 @@ exports[`AlbumThumbnailView renders correctly 1`] = `
   className="sc-AxjAm duEsRS"
 >
   <a
-    href="/album/XPTO"
+    href="/album/4otkd9As6YaxxEkIjXPiZ6"
     onClick={[Function]}
   >
     <img
-      alt="XPTO"
+      alt="Music To Be Murdered By"
       className="sc-AxirZ cTKAUo"
-      src="XPTO"
+      src="https://i.scdn.co/image/ab67616d0000b2732f44aec83b20e40f3baef73c"
     />
     <h2
       className="sc-AxiKw dfKjlj"
     >
-      XPTO
+      Music To Be Murdered By
     </h2>
     <h3
       className="sc-AxhCb dxgIcC"
     >
-      XPTO
+      Eminem
     </h3>
   </a>
 </article>
