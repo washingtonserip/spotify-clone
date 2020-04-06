@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppView render corectly 1`] = `
+<div
+  className="sc-fznMAR cjBjob"
+>
+  <div
+    className="sc-fznyAO gevFZD"
+  >
+    <div
+      className="sc-fznKkj gHuSSi"
+    >
+      <img
+        alt="Spotify"
+        className="sc-fznZeY eXznpz"
+        src="test-file-stub"
+      />
+      <h1
+        className="sc-fzokOt jQYRUm"
+      >
+        Pesquise, favorite e ouça!
+      </h1>
+      <button
+        className="sc-fzqBZW htnOaW"
+        onClick={[Function]}
+      >
+        Conecte-se via Spotify
+      </button>
+    </div>
+  </div>
+</div>
+`;
