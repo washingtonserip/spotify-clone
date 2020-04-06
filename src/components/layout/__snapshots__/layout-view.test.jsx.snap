@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LayoutView render corectly 1`] = `
+<div
+  className="sc-AxjAm xZqxm"
+>
+  <div
+    className="sc-AxirZ eNjkev"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Spotify"
+        className="sc-AxiKw gqLFEV"
+        src="test-file-stub"
+      />
+    </a>
+  </div>
+  <div
+    className="sc-AxhCb hNvnOw"
+  >
+    Content
+  </div>
+</div>
+`;
