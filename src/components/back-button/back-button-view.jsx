@@ -9,7 +9,7 @@ function BackButtonView() {
   const history = useHistory();
 
   return (
-    <Button onClick={() => history.goBack()}>
+    <Button onClick={history.goBack}>
       <Icon />
       Voltar
     </Button>
