@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`BackButtonView render corectly 1`] = `
+exports[`BackButtonView renders correctly 1`] = `
 <button
   className="sc-AxjAm cOdxoW"
   onClick={[MockFunction]}

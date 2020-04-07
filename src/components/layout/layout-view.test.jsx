@@ -5,7 +5,7 @@ import { mount } from 'enzyme';
 import LayoutView from './layout-view';
 
 describe('LayoutView', () => {
-  test('render corectly', () => {
+  test('renders correctly', () => {
     const tree = renderer
       .create(
         <MemoryRouter>

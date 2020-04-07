@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AppView render corectly 1`] = `
+exports[`AppView renders correctly 1`] = `
 <div
   className="sc-fznMAR cjBjob"
 >

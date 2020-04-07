@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HeadingsView render corectly 1`] = `
+exports[`HeadingsView renders correctly 1`] = `
 <h1
   className="sc-AxjAm dwydzm"
 >

@@ -12,7 +12,7 @@ jest.mock('react-router-dom', () => ({
 }));
 
 describe('BackButtonView', () => {
-  test('render corectly', () => {
+  test('renders correctly', () => {
     const tree = renderer
       .create(<BackButtonView />)
       .toJSON();

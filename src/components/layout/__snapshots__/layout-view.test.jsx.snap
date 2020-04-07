@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`LayoutView render corectly 1`] = `
+exports[`LayoutView renders correctly 1`] = `
 <div
   className="sc-AxjAm xZqxm"
 >
