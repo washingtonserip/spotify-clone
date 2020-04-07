@@ -25,6 +25,6 @@ yarn-error.log*
 
 # dotenv environment variables file
 .env
-environments/.env.development
-environments/.env.homolog
-environments/.env.production
+envs/development.env.js
+envs/homolog.env.js
+envs/production.env.js

@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 
 const commonPaths = require('./paths');
+const developmentEnvs = require('../envs/development.env');
 
 module.exports = {
   mode: 'development',
@@ -41,9 +42,9 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
-        CLIENT_ID: JSON.stringify('129f014a85d7444e978a70025658bd1f'),
-        REDIRECT_URI: JSON.stringify('http://localhost:3000/callback-auth'),
-        API_URL: JSON.stringify('https://api.spotify.com'),
+        CLIENT_ID: JSON.stringify(developmentEnvs.CLIENT_ID),
+        REDIRECT_URI: JSON.stringify(developmentEnvs.REDIRECT_URI),
+        API_URL: JSON.stringify(developmentEnvs.API_URL),
       },
     }),
   ],
