@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchView renders correctly 1`] = `
+<div
+  className="sc-AxjAm CMpkT"
+>
+  <label
+    className="sc-AxirZ dwykhk"
+    htmlFor="search-field"
+  >
+    Busque por artistas, álbuns ou músicas
+  </label>
+  <input
+    className="sc-AxiKw kUCIYV"
+    id="search-field"
+    onChange={[Function]}
+    placeholder="Comece a escrever..."
+    value="Eminem"
+  />
+</div>
+`;
