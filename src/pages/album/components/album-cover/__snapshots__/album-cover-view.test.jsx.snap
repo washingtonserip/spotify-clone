@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AlbumCoverView renders correctly 1`] = `
+<div
+  className="sc-AxjAm flemmw"
+>
+  <img
+    alt="Music To Be Murdered By"
+    className="sc-AxirZ izKjuu"
+    src="https://i.scdn.co/image/ab67616d0000b2732f44aec83b20e40f3baef73c"
+  />
+  <h2
+    className="sc-AxiKw bKnEfS"
+  >
+    Music To Be Murdered By
+  </h2>
+  <h3
+    className="sc-AxhCb csvEgr"
+  >
+    Eminem
+  </h3>
+</div>
+`;
