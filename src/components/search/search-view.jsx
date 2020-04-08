@@ -8,11 +8,13 @@ function SearchView({
 }) {
   const inputElement = useRef(null);
 
-  useEffect(() => {
+  function setFocusInput() {
     if (inputElement.current) {
       inputElement.current.focus();
     }
-  }, []);
+  }
+
+  useEffect(() => setFocusInput(), []);
 
   return (
     <Wrapper>
