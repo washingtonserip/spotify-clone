@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackListView renders correctly 1`] = `
+<div
+  className="sc-AxjAm StDqN"
+>
+  <ul
+    className="sc-AxirZ efLPWf"
+  >
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        1
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        Premonition - Intro
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        2
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        Unaccommodating (feat. Young M.A)
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        3
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        You Gon’ Learn (feat. Royce Da 5'9" & White Gold)
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        4
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        Alfred - Interlude
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        5
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        Those Kinda Nights (feat. Ed Sheeran)
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        6
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        In Too Deep
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        7
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        Godzilla (feat. Juice WRLD)
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        8
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        Darkness
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        9
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        Leaving Heaven (feat. Skylar Grey)
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+    <li
+      className="sc-AxiKw bTjmim"
+    >
+      <div
+        className="sc-AxhCb etchzD"
+      >
+        10
+      </div>
+      <div
+        className="sc-AxhUy krXQjZ"
+      >
+        Yah Yah (feat. Royce Da 5'9", Black Thought, Q-Tip & Denaun)
+      </div>
+      <div
+        className="sc-AxgMl cXMoIt"
+      />
+    </li>
+  </ul>
+</div>
+`;
