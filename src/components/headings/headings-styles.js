@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-// eslint-disable-next-line import/prefer-default-export
 export const Title = styled.h1`
   font-size: 16px;
   font-weight: 400;
