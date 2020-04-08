@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchResultsView renders correctly 1`] = `
+<div
+  className="sc-AxhUy jFrugx"
+>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/4otkd9As6YaxxEkIjXPiZ6"
+      onClick={[Function]}
+    >
+      <img
+        alt="Music To Be Murdered By"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b2732f44aec83b20e40f3baef73c"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        Music To Be Murdered By
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/2cWBwpqMsDJC1ZUwz813lo"
+      onClick={[Function]}
+    >
+      <img
+        alt="The Eminem Show"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        The Eminem Show
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/47BiFcV59TQi2s9SkBo2pb"
+      onClick={[Function]}
+    >
+      <img
+        alt="Recovery"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b273c08d5fa5c0f1a834acef5100"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        Recovery
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/3HNnxK7NgLXbDoxRZxNWiR"
+      onClick={[Function]}
+    >
+      <img
+        alt="Kamikaze"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b273e4073def0c03a91e3fceaf73"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        Kamikaze
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/6t7956yu5zYf5A829XRiHC"
+      onClick={[Function]}
+    >
+      <img
+        alt="The Marshall Mathers LP"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b273dbb3dd82da45b7d7f31b1b42"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        The Marshall Mathers LP
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/2bBDybnvM234YGjNVcMQaK"
+      onClick={[Function]}
+    >
+      <img
+        alt="Eminem Presents The Re-Up"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b273a2458e298106612662510936"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        Eminem Presents The Re-Up
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/6DN7GcZF1HywzrkGN6Eeqk"
+      onClick={[Function]}
+    >
+      <img
+        alt="The Marshall Mathers LP2 (Deluxe)"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b273cb66bcc14c6f857c127d5969"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        The Marshall Mathers LP2 (Deluxe)
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/1rfORa9iYmocEsnnZGMVC4"
+      onClick={[Function]}
+    >
+      <img
+        alt="Just Lose It"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b273b6ef2ebd34efb08cb76f6eec"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        Just Lose It
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/0U6ldwLBEMkwgfQRY4V6D2"
+      onClick={[Function]}
+    >
+      <img
+        alt="Revival"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b273dee6b58d35215322626b5701"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        Revival
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+  <article
+    className="sc-AxjAm duEsRS"
+  >
+    <a
+      href="/album/7tsXPtLqhab1zWeubbf6JH"
+      onClick={[Function]}
+    >
+      <img
+        alt="Encore"
+        className="sc-AxirZ cTKAUo"
+        src="https://i.scdn.co/image/ab67616d0000b273dfd0ebe9b4b99f621f376453"
+      />
+      <h2
+        className="sc-AxiKw dfKjlj"
+      >
+        Encore
+      </h2>
+      <h3
+        className="sc-AxhCb dxgIcC"
+      >
+        Eminem
+      </h3>
+    </a>
+  </article>
+</div>
+`;
