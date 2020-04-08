@@ -1,7 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import BackButtonView from './back-button-view';
+import { Button } from './back-button-styles';
 
 const mockGoBack = jest.fn();
 
@@ -21,10 +22,10 @@ describe('BackButtonView', () => {
   });
 
   test('should navigate to previus page', () => {
-    const wrapper = mount(<BackButtonView />);
+    const wrapper = shallow(<BackButtonView />);
 
     wrapper
-      .find('button')
+      .find(Button)
       .first()
       .simulate('click');
 
