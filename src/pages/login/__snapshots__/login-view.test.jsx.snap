@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginView renders correctly 1`] = `
+<div
+  className="sc-AxjAm bvmcgx"
+>
+  <div
+    className="sc-AxirZ dcYQlC"
+  >
+    <img
+      alt="Spotify"
+      className="sc-AxiKw faXdmn"
+      src="test-file-stub"
+    />
+    <h1
+      className="sc-AxhCb gRZKvI"
+    >
+      Pesquise, favorite e ouça!
+    </h1>
+    <button
+      className="sc-AxhUy dGQXjA"
+      onClick={[MockFunction]}
+    >
+      Conecte-se via Spotify
+    </button>
+  </div>
+</div>
+`;
