@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TrackItemView renders correctly 1`] = `
+<li
+  className="sc-AxjAm ernjFJ"
+>
+  <div
+    className="sc-AxirZ iXctlD"
+  >
+    2
+  </div>
+  <div
+    className="sc-AxiKw jeFTTI"
+  >
+    Premonition - Intro
+  </div>
+  <div
+    className="sc-AxhCb hNGpi"
+  />
+</li>
+`;
