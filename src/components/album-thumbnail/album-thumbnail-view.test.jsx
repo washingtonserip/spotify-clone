@@ -1,21 +1,22 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { MemoryRouter } from 'react-router-dom';
+import { mockAlbum } from './album-thumbnail-view.mock';
 import AlbumThumbnailView from './album-thumbnail-view';
 
 describe('AlbumThumbnailView', () => {
   it('renders correctly', () => {
     const tree = renderer
-      .create((
+      .create(
         <MemoryRouter>
           <AlbumThumbnailView
-            id="4otkd9As6YaxxEkIjXPiZ6"
-            cover="https://i.scdn.co/image/ab67616d0000b2732f44aec83b20e40f3baef73c"
-            name="Music To Be Murdered By"
-            artists={['Eminem']}
+            id={mockAlbum.id}
+            cover={mockAlbum.cover}
+            name={mockAlbum.name}
+            artists={mockAlbum.artists}
           />
-        </MemoryRouter>
-      ))
+        </MemoryRouter>,
+      )
       .toJSON();
 
     expect(tree).toMatchSnapshot();
