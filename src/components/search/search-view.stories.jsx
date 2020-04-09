@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import SearchView from './search-view';
 
 export default {
@@ -8,13 +9,13 @@ export default {
 export const withoutText = () => (
   <SearchView
     searchText=""
-    doSearch={() => {}}
+    doSearch={action('do-search')}
   />
 );
 
 export const withText = () => (
   <SearchView
     searchText="Eminem"
-    doSearch={() => {}}
+    doSearch={action('do-search')}
   />
 );
