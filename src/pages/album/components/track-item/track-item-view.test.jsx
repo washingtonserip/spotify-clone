@@ -1,6 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import TrackItemView from './track-item-view';
+import { mockTrackItem } from '../../album-view.mock';
 
 jest.mock('../../../../utils/time', () => ({
   millisToMinutesAndSeconds: jest.fn(),
@@ -11,9 +12,9 @@ describe('TrackItemView', () => {
     const tree = renderer
       .create(
         <TrackItemView
-          index={1}
-          name="Premonition - Intro"
-          duration="173893"
+          index={mockTrackItem.index}
+          name={mockTrackItem.name}
+          duration={mockTrackItem.duration}
         />,
       )
       .toJSON();
