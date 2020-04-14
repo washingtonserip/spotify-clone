@@ -1,9 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { saveCacheAlbums } from '../../redux/search-cache/actions';
-import { getCachedAlbumsByQuery } from '../../redux/search-cache/selectors';
-import SearchProvider from '../../providers/search';
+import { searchAlbuns } from '../../redux/search/actions';
+import { getCachedAlbumsByQuery } from '../../redux/search/selectors';
 import SearchView from './search-view';
 
 function SearchContainer() {
@@ -11,19 +10,13 @@ function SearchContainer() {
   const chachedAlbums = useSelector(getCachedAlbumsByQuery(query));
   const dispatch = useDispatch();
 
-  function searchAlbuns() {
-    SearchProvider.searchV1(query)
-      .then((res) => res.json())
-      .then((res) => dispatch(saveCacheAlbums(query, res.albums)));
-  }
-
-  function verifyCacheAndFetchAlbums() {
+  function verifyAndSearchAlbums() {
     if (query && !chachedAlbums) {
-      searchAlbuns();
+      dispatch(searchAlbuns(query));
     }
   }
 
-  verifyCacheAndFetchAlbums();
+  useEffect(() => verifyAndSearchAlbums(), [query]);
 
   return (
     <SearchView
