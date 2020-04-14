@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';
-import searchCache from './search-cache';
 import albums from './albums';
+import search from './search';
 
-export default combineReducers({ searchCache, albums });
+export default combineReducers({ albums, search });

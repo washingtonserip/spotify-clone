@@ -1,1 +1,0 @@
-export const SAVE_CACHE_ALBUMS = 'SAVE_CACHE_ALBUMS';
