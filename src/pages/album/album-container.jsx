@@ -1,38 +1,31 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { saveAlbum } from '../../redux/albums/actions';
-import { getCachedAlbumById } from '../../redux/albums/selectors';
-import AlbumsProvider from '../../providers/albums';
+import { fetchAlbums } from '../../redux/albums/actions';
+import { getAlbumById } from '../../redux/albums/selectors';
 import AlbumView from './album-view';
 
 function AlbumContainer() {
   const { id } = useParams();
-  const chachedAlbum = useSelector(getCachedAlbumById(id));
+  const album = useSelector(getAlbumById(id));
   const dispatch = useDispatch();
 
-  function searchAlbuns() {
-    AlbumsProvider.getAlbumV1(id)
-      .then((res) => res.json())
-      .then((res) => dispatch(saveAlbum(id, res)));
-  }
-
-  function verifyCacheAndFetchAlbum() {
-    if (!chachedAlbum) {
-      searchAlbuns();
+  function fetchAlbum() {
+    if (!album) {
+      dispatch(fetchAlbums(id));
     }
   }
 
-  verifyCacheAndFetchAlbum();
+  useEffect(() => fetchAlbum(), []);
 
-  return (
+  return album ? (
     <AlbumView
-      cover={chachedAlbum ? chachedAlbum.images[0].url : ''}
-      name={chachedAlbum ? chachedAlbum.name : ''}
-      artists={chachedAlbum ? chachedAlbum.artists.map((artist) => artist.name) : []}
-      tracks={chachedAlbum ? chachedAlbum.tracks.items : []}
+      cover={album.images[0].url}
+      name={album.name}
+      artists={album.artists.map((artist) => artist.name)}
+      tracks={album.tracks.items}
     />
-  );
+  ) : (<></>);
 }
 
 export default AlbumContainer;
