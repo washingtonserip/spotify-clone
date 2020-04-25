@@ -76,9 +76,9 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        CLIENT_ID: process.env.CLIENT_ID,
-        REDIRECT_URI: process.env.REDIRECT_URI,
-        API_URL: process.env.API_URL,
+        CLIENT_ID: JSON.stringify(process.env.CLIENT_ID),
+        REDIRECT_URI: JSON.stringify(process.env.REDIRECT_URI),
+        API_URL: JSON.stringify(process.env.API_URL),
       },
     }),
     new FileManagerPlugin({
