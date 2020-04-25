@@ -6,7 +6,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 const commonPaths = require('./paths');
-const productionEnvs = require('../envs/production.env');
 
 module.exports = {
   mode: 'production',
@@ -77,9 +76,9 @@ module.exports = {
     }),
     new webpack.DefinePlugin({
       'process.env': {
-        CLIENT_ID: JSON.stringify(productionEnvs.CLIENT_ID),
-        REDIRECT_URI: JSON.stringify(productionEnvs.REDIRECT_URI),
-        API_URL: JSON.stringify(productionEnvs.API_URL),
+        CLIENT_ID: process.env.CLIENT_ID,
+        REDIRECT_URI: process.env.REDIRECT_URI,
+        API_URL: process.env.API_URL,
       },
     }),
     new FileManagerPlugin({
