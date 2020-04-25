@@ -1,7 +1,9 @@
 const webpack = require('webpack');
-
+const dotenv = require('dotenv');
+const fs = require('fs');
 const commonPaths = require('./paths');
-const developmentEnvs = require('../envs/development.env');
+
+const developmentEnvs = dotenv.parse(fs.readFileSync('./envs/.env.development'));
 
 module.exports = {
   mode: 'development',
