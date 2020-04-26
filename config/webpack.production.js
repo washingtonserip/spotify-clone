@@ -85,6 +85,7 @@ module.exports = {
       onEnd: {
         copy: [
           { source: 'dist/index.html', destination: 'dist/404.html' },
+          { source: 'public/netlify.toml', destination: 'dist/netlify.toml' },
         ],
       },
     }),
